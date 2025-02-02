@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css?family=Marck+Script:regular&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Playwrite+AU+SA:&display=swap");
+@import url("default.css");
+
+[class*="__container"] {
+	background-color: var(--null-bg-color_container);
+	max-width: var(--null-max-width_container);
+	padding: var(--null-pading_container);
+	margin: 0 auto;
+}
+
+:root {
+	--null-max-width_container: 80vw;
+	--null-pading_container: 0px 15px;
+	--null-bg-color_container: #a0959515 // none;;
+	--null-font-size_body: 16px;
+	--null-font-family_body: "Marck Script";
+	--null-bg-color_body: #959090 /* #2b303b*/;
+	--null-color_body: #fff;
+}
+
+.header__title {
+	padding: 20px;
+	font-size: 50px;
+	text-align: center;
+}
+#ttt {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	border: 2px solid #1f2675;
+	background-color: #77608d;
+}
+#ttt > div {
+	height: 100px;
+	display: flex;
+	line-height: 2;
+	font-size: 50px;
+	flex: 0 0 33.333%;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #000;
+	background-color: #523d38;
+}
+#ttt > div:nth-child(odd) {
+	background-color: #794f45;
+}
+#ttt > div:hover {
+	filter: brightness(1.1);
+}
+
+.button-start-new-game {
+	padding: 10px 15px;
+	background-color: #7272725f;
+	font-family: "Playwrite AU SA";
+	border-radius: 8px;
+	transform: translate(65%);
+	font-weight: 700;
+}
+.button-start-new-game:hover {
+	cursor: pointer;
+}
+.out {
+	font-size: 25px;
+	line-height: 1.5;
+	margin-bottom: 15px;
+	width: 300px;
+	text-align: center;
+}
